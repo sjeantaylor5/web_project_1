@@ -71,6 +71,47 @@
   background-color: #2f80ed;
 }
 
+section {
+  border: 1px solid red;
+}
+
+.description {
+  background-color: white;
+  display: flex;
+}
+
+.two-columns {
+  display: flex;
+  margin: 100px auto;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  width: 175px;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  min-height: 30px;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;
