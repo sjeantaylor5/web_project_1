@@ -225,3 +225,74 @@ section {
   margin-right: 0;
   margin-top: 80px;
 }
+
+.footer {
+  background-color: black;
+  min-height: 350px;
+  border: 1px solid red;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 60px auto 40px auto;
+  border: 1px solid red;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  border: 1px solid red;
+}
+
+.footer__column_content_info {
+  border: 1px solid red;
+}
+
+.footer__column_content_social {
+  border: 1px solid red;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+  border: 1px solid red;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 18px;
+  border: 1px solid red;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer__column-links {
+  margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  border: 1px solid red;
+}
+
+.footer__social-icon {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  border: 1px solid red;
+}
+
+
+
+
