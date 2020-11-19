@@ -1,5 +1,4 @@
 .page {
-  border: 1px solid red;
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
@@ -12,6 +11,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  z-index: 1;
 }
 
 .header__logo_place_header {
@@ -71,20 +71,16 @@
   background-color: #2f80ed;
 }
 
-section {
-  border: 1px solid red;
-}
-
 .description {
   background-color: white;
+  display: flex;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
-  margin: 100px auto 0 auto;
+  margin: 100px auto;
   width: 80%;
-  min-width: 784px;
 }
 
 .two-columns__brief {
@@ -100,15 +96,10 @@ section {
   min-width: 784px;
 }
 
-.two-columns__paragraph + .two-columns__paragraph {
-  margin-top: 30px;
-}
-
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  min-height: 30px;
 }
 
 .two-columns__span-accent {
@@ -123,7 +114,7 @@ section {
 }
 
 .digits-title {
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -172,15 +163,13 @@ section {
 .feynman {
   height: 790px;
   position: relative;
-  display: flex;
-  z-index: 0;
 }
 
 .feynman__title {
-  position: absolute;
+  position: relative;
+  display: flex;
   width: 775px;
-  top: 100px;
-  margin-left: 425px;
+  margin: 100px auto 0 auto;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -189,12 +178,13 @@ section {
 }
 
 .feynman__subtitle {
-  position: absolute;
-  margin-top: 430px;
-  margin-left: 620px;
+  margin-top: 70px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  position: relative;
+  display: flex;
+  justify-content: center;
   z-index: 2;
 }
 
@@ -218,7 +208,57 @@ section {
   z-index: 1;
 }
 
-/* including elements with key-value modifiers */
+.kaufman {
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
+  z-index: 1;
+}
+
+.kaufman-title_theme_dark {
+  position: relative;
+  color: white;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  width: 60%;
+  margin: 90px auto 20px auto;
+  display: flex;
+  text-align: center;
+  z-index: 2;
+}
+
+.kaufman-subtitle_theme_dark {
+  position: relative;
+  color: white;
+  line-height: 43px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.table_theme_dark {
+  position: relative;
+  list-style-type: none;
+  width: 1100px;
+  margin: 0 auto 90px auto;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -226,37 +266,51 @@ section {
   margin-top: 80px;
 }
 
+.table__heading_theme_dark {
+  color: white;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table__text_theme_dark {
+  color: white;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .footer {
-  background-color: black;
+  background-color: #1f1f1f;
   min-height: 350px;
-  border: 1px solid red;
+  padding-top: 60px;
 }
 
 .footer__columns {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 60px auto 40px auto;
-  border: 1px solid red;
+  margin: 60px auto 0 auto;
+  padding-bottom: 40px;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  border: 1px solid red;
+  position: relative;
 }
 
 .footer__column_content_info {
-  border: 1px solid red;
+  min-height: 350px;
 }
 
 .footer__column_content_social {
-  border: 1px solid red;
+  min-height: 350px;
 }
 
 .logo_place_footer {
   width: 183px;
   height: 35px;
-  border: 1px solid red;
 }
 
 .footer__author {
@@ -264,8 +318,10 @@ section {
   font-size: 18px;
   font-weight: normal;
   color: white;
-  margin-bottom: 18px;
-  border: 1px solid red;
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  margin-top: 18px;
 }
 
 .footer__column-heading {
@@ -277,20 +333,17 @@ section {
 }
 
 .footer__column-links {
-  margin-bottom: 16px;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   color: white;
-  border: 1px solid red;
+  text-decoration: none;
 }
 
 .footer__social-icon {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
-  border: 1px solid red;
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
 }
 
 
