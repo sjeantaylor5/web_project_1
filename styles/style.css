@@ -273,6 +273,7 @@
 
 .footer {
   background-color: #1f1f1f;
+  color: white;
   min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -282,16 +283,20 @@
 
 .footer__columns {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
 }
 
+.footer__column {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .logo_place_footer {
@@ -303,7 +308,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  color: white;
   margin-left: 0;
   margin-bottom: 18px;
 }
@@ -313,28 +317,26 @@
   line-height: 45px;
   font-size: 18px;
   font-weight: bold;
-  color: white;
 }
 
 .footer__column-links {
-  text-decoration: none;
   list-style-type: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  color: white;
   margin: 0;
   padding: 0;
 }
 
-.footer__social-icon {
-  list-style-type: none;
-  text-decoration: none;
+.footer__links {
   color: white;
+  text-decoration: none;
+}
+
+.footer__social-icon {
   height: 16px;
   width: 16px;
   margin: 0 10px 0 0;
-  padding: 0;
 }
 
 
