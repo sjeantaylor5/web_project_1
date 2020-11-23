@@ -174,8 +174,8 @@
   background-color: #f2f2f2;
   min-height: 790px;
   padding-top: 100px;
-  box-sizing: content-box;
   position: relative;
+  box-sizing: border-box;
   z-index: 1;
 }
 
