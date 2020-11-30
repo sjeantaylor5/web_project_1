@@ -55,6 +55,12 @@
   bottom: 30px;
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 1s linear 0s;
+  opacity: 1;
+}
+
+.header__link:hover {
+  opacity: 0.5;
 }
 
 .header__main-illustration {
@@ -74,6 +80,17 @@
   top: 64px;
   right: 0;
   background-color: #2f80ed;
+  transform: rotate(-15deg);
+  animation: rotate 20s linear 0s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .description {
@@ -207,6 +224,12 @@
   font-weight: normal;
   color: black;
   text-decoration: none;
+  transition: opacity 1s linear 0s;
+  opacity: 1;
+}
+
+.feynman__link:hover {
+  opacity: 0.25;
 }
 
 .feynman__pic {
@@ -332,6 +355,11 @@
 .footer__link {
   color: white;
   text-decoration: none;
+  transition: opacity 1s linear 0s;
+}
+
+.footer__link:hover {
+  opacity: 0.3;
 }
 
 .footer__social-icon {
