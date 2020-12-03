@@ -7,3 +7,9 @@
 @import url(./__quote-author-subline/khan__quote-author-subline.css);
 @import url(./__quote-author/khan__quote-author.css);
 @import url(./__quote/khan__quote.css);
+
+.khan {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  padding-top: 105px;
+}
