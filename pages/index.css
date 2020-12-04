@@ -11,17 +11,9 @@
 @import url(../blocks/oakley/oakley.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/resources/resources.css);
+@import url(../blocks/rotation/rotation.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/video/video.css);
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
